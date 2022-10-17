@@ -17,8 +17,11 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/background.png);
-  background-size: cover;
+  background-image: url(images/rafi-desktop-2.png);
+  background-size: contain;
+  background-position-x: 749px;
+  background-position-y: 100px;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -367,16 +370,41 @@ nav .fas {
   display: none;
 }
 
+#sending.active {
+  display: inline-block;
+  margin: 15px 0 -5px 15px;
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+  border: 3px solid rgba(128, 128, 128, 0.5);
+  border-top-color: #eee;
+  overflow: hidden;
+  transform-origin: 50% 50%;
+  animation: sending 1.5s linear infinite;
+}
+
+@keyframes sending {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 #msg {
   color: #61b752;
-  margin-top: -40px;
+  margin-top: -15px;
   display: block;
 }
 
 /* Small screen styles */
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url(images/phone-background.png);
+    background-image: url(images/rafi-desktop-2.png);
+    background-position-x: 107px;
+    background-position-y: 191px;
   }
   .header-text {
     margin-top: 100%;

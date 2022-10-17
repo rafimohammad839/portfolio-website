@@ -30,7 +30,7 @@
       </nav>
       <div class="header-text">
         <p>UI/UX Designer</p>
-        <h1>Hi, I'm <span>Kevin</span> <br>Jen from Australia</h1>
+        <h1>Hi, I'm <span id="auto-input"></span><br>from India</h1>
       </div>
     </div>
   </div>
@@ -41,11 +41,11 @@
     <div class="container">
     <div class="row">
         <div class="about-col-1">
-          <img src="images/user.png" alt="user-img">
+          <img src="images/rafi-desktop-about.jpg" alt="user-img">
         </div>
         <div class="about-col-2">
           <h1 class="subtitle">About Me</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem molestiae sapiente repellendus fugit tempora aperiam, sit eius, quasi atque quae soluta? Commodi molestias soluta optio tempora nemo maxime laudantium in. Unde, dolor quae?</p>
+          <p>Experienced JavaScript/React developer with 1+ year experience in the industry. Proficient with React. Used problem solving aptitude to enhance application performance by 14%. Supportive and enthusiastic team player dedicated to streamline processes and efficiently resolving project issues.</p>
 
           <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -57,24 +57,24 @@
             <ul>
               <li><span>UI/UX</span><br>Designing Web Interfaces</li>
               <li><span>Web Development</span><br>Web App Development</li>
-              <li><span>App Development</span><br>Building Android/iOS Apps</li>
+              <li><span>App Development</span><br>React Native Apps</li>
             </ul>
           </div>
 
           <div id="experience" class="tab-contents">
             <ul>
-              <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
-              <li><span>2019 - 2021</span><br>Team Lead at StartApp LLC.</li>
-              <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
-              <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+              <li><span>2021 - Current</span><br>Full Stack Developer at To The New Pvt Ltd.</li>
+              <li><span>2019 - 2021</span><br>Team Lead at College Programming Contests</li>
+              <li><span>2017 - 2019</span><br>UI/UX Design Freelancer</li>
+              <li><span>2016 - 2017</span><br>Internship at Internshala</li>
             </ul>
           </div>
 
           <div id="education" class="tab-contents">
             <ul>
-              <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
-              <li><span>2016</span><br>MBA from University of Sydney</li>
-              <li><span>2014</span><br>BBA from University of Queensland</li>
+              <li><span>2021</span><br>B.Tech from Abdul Kalam Technical University</li>
+              <li><span>2017</span><br>Senior Secondary Education from GNPHS, Itarsi</li>
+              <li><span>2015</span><br>Higer Secondary Education from RPHS, Itarsi</li>
             </ul>
           </div>
 
@@ -104,7 +104,7 @@
         </div>
         <div>
           <i class="fa-brands fa-app-store"></i>
-          <h2>App Development</h2>
+          <h2>Native App Development</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae aperiam libero cupiditate perspiciatis, in vitae dignissimos aliquam minus, deserunt animi rerum maxime sed. Facilis, distinctio ut?</p>
           <a href="#">Learn more</a>
         </div>
@@ -153,13 +153,13 @@
       <div class="row">
         <div class="contact-left">
           <h1 class="subtitle">Contact Me</h1>
-          <p><i class="fa-solid fa-paper-plane"></i> rafi.workaholic@gmail.com</p>
+          <p href="mailto:(rafi.workaholic@gmail.com)"><a style="all:unset; cursor: pointer;" href="mailto:rafi.workaholic@gmail.com"><i class="fa-solid fa-paper-plane"></i></a>rafi.workaholic@gmail.com</p>
           <p><i class="fas fa-phone-square-alt"></i> 7987486318</p>
           <div class="social-icons">
-            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100006435786804"><i class="fa-brands fa-facebook"></i></a>
+            <a target="_blank" href="https://twitter.com/Mohamma23257943"><i class="fa-brands fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/md_rafi_1998/"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/mohammad-rafi-239a80181/"><i class="fa-brands fa-linkedin"></i></a>
           </div>
           <a href="./resume.pdf" target="_blank" class="btn btn2" download>Download CV</a>
         </div>
@@ -169,6 +169,7 @@
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="6" placeholder="Your Message"></textarea>
             <button type="submit" class="btn btn2">Submit</button>
+            <span id="sending"></span>
           </form>
           <span id="msg"></span>
         </div>
@@ -176,28 +177,12 @@
       
     </div>
     <div class="copyright">
-      <p>Copyright &copy; Kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorial</p>
+      <p>Copyright &copy; Rafi. Made with <i class="fa-solid fa-heart"></i> by Mohammad Rafi</p>
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="script.js"></script>
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwJL0w0M9BWFZpWf1VghjvOJWYrolVk3sitoxSDw8U3wG8n3YNIBK3Owo7p-SlnCS2CYA/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById('msg')
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-          msg.innerHTML = "Your repsonse has been successfully submited!";
-          setTimeout(() => {
-            msg.innerHTML = "";
-          }, 5000)
-          form.reset();
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+
 </body>
 </html>
